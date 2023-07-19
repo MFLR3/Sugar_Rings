@@ -1,0 +1,326 @@
+/* To get footer to stick:
+- html set to height 100%
+- body set to min-height 100%, display: flex and flex-direction: column.
+*/
+
+* { 
+	margin: 0; 
+	padding: 0; 
+	​box-sizing: border-box;
+}
+
+html {
+	height:100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+	font-size:3vw;
+	max-width: 100%; 
+	overflow-x: hidden;	
+	min-height:100%;
+	display:flex;
+	flex-direction:column;
+}
+
+h1, h2 {
+	  text-shadow: 2px 2px 2px gray;
+}
+
+/* ========= MOBILE ========= */
+/* First page */
+.srlogo img {
+	width:70%;
+	margin-left:15%;
+}
+
+.newsletter,.localnavs, .navlinks {
+	width:90%;
+	margin:5%;
+}
+
+.navlinks li a img {
+	width: 10%;
+	margin-left:12%;
+}
+
+.navlinks li, .localnavs li, .newsletter li, .footnav li {
+
+	display:inline;
+	list-style-type:none;
+}
+
+.localnavs ul, .navlinks ul, .banner, .navigation, footer {
+	width:100%;	
+}
+
+.localnavs li a  {
+	font-size:4vw;
+	link-style-type:none;
+	color:black;
+}
+
+.localnavs li, .footnav li {
+	padding-left:6%;
+}
+
+.localnavs ul {
+	margin-left:6%;
+}
+
+.newsletter {	
+	margin:0% 0% 5% 25%;
+}
+
+.newsletter label {
+	display:block;
+}
+
+.newsletter input {
+	display:inline-block;
+	width:50%;
+	height:7vw;
+}
+
+.newsletter img {
+	width:5vw;
+	display:inline-block;
+}
+
+.banner img {
+	width:25%;
+	display:inline;
+	margin:0;
+	box-shadow:1px 4px 8px 1px;
+}
+
+/* Main body */
+
+.mainbody {
+	margin-top:10%;	
+	padding-bottom:10%;
+	background-color:#FDF6E9;
+	font-size:4vw;
+}
+
+.mainbody h1 {
+	font-size:6vw;
+	padding-top:5%;
+	text-align:center;
+	color:pink;
+}
+
+.mainbody img {
+	width:50%;
+	margin:5% 25% 5% 25%;
+	border-radius:50%;
+	border:1px solid black;
+	box-shadow:1px 1px 8px 1px;
+}
+
+.mainarticle h3 {
+	text-align:center;
+	margin:5% 0%;
+}
+
+.mainarticle h2 {
+	font-size:5vw;
+	display:block;
+	text-align:center;
+	margin:5% 0% 15% 0%;
+}
+
+.mainarticle div {
+	margin:20% 0%;
+}
+
+.h3width {
+	width:50%;
+	padding:0% 25%;
+}
+
+.split {
+	display:flex;
+	margin:10%;
+}
+
+.mainarticle img {
+	width:40%;
+	margin:0% 30%;
+	border-radius:50%;
+}
+
+.endsection img {
+	width:80%;
+	margin:10%;
+}
+
+.twinedivide img {
+	width:80%;
+	margin:10%;
+}
+
+
+
+/* End Section */
+
+
+
+/* Footer */
+
+footer {
+	bottom: 0;
+	background-color:black;
+	margin-top:auto;	
+}
+
+footer, footer a {
+	color:white;
+	font-size:3vw;
+}
+
+footer ul {
+	margin:2%;
+	padding:0;
+}
+
+.footnav ul {
+	display:flex;
+}
+
+.footnav ul {
+	padding:0;
+}
+
+.footnav li {
+	margin:2%;
+}
+
+.footnav li a {
+	font-size:4vw;
+}
+
+footer h2, .footnav4 label {
+	font-size:4vw;
+}
+
+.footnav2, .footnav3, .footnav4 {
+	padding:5%;
+	margin:5%;
+}
+
+.footnav4 {
+	display:none;
+}
+
+.footnav3 a, .footnav3 h2 {
+	display:inline;
+}
+
+.footnav3 a img {
+	margin-left:3%;
+	padding-top:5%;
+	width:18%;
+}
+
+
+/* ========= PSEUDO ========= */
+
+a:link {
+	text-decoration:none;
+}
+
+.banner img:first-child {
+	margin-left:12.5%;
+	border-radius:10% 0% 0% 10%;
+}
+
+.banner img:last-child {
+	border-radius:0% 10% 10% 0%;
+}
+
+.mainarticle img:last-child {
+	margin-bottom:10%;
+}
+
+/* ========= MEDIA QUERIES ========= */
+
+/* Tablets 768px-1023px */
+
+@media only screen and (min-width: 768px)
+/* and (max-width: 1023px) */ {
+	
+	.navigation {
+		display:flex;
+		padding-left:2%;
+	}
+	
+	.srlogo img {
+		width:40%;
+		margin-left:30%;
+	}
+	
+	.localnavs {
+		display:inline-block;
+		width:32%;
+		margin-left:9%;
+		margin-top:0;
+		order:2;
+	}
+	
+	.localnavs ul {
+		width:100%;
+		margin-left:0%;
+	}
+	
+	.localnavs ul li {
+		padding:1%;
+	}
+	
+	.localnavs li a {
+		font-size:1.7vw;
+		font-weight:bold;
+	}
+	
+	.navlinks ul li a img {
+		width:12%;
+		margin-left:3%;
+	}
+	
+	.navlinks {
+		display:inline-block;
+		width:22%;		
+		padding-left:3%;
+		margin:0% 0% 0% 3%;
+		order:3;
+	}
+	
+	.newsletter {
+		display:inline-block;
+		margin-left:5%;
+		font-size:1vw;
+		order:1;
+	}
+	
+	.newsletter input {
+		width:80%;
+		height:4vw;
+	}
+	
+	.newsletter img {
+		width:10%;
+	}
+	
+	.email, .newsletter {
+		width:20%;
+	}	
+}
+
+
+
+
+
+
+
+
+
